@@ -16,7 +16,7 @@ namespace Survivor.Controllers
             _context = context;
         }
 
-        // GET: /api/competitors
+        // GET: /api/Competitor
         [HttpGet]
         public IActionResult GetAllCompetitors()
         {
@@ -24,7 +24,7 @@ namespace Survivor.Controllers
             return Ok(competitors);
         }
 
-        // GET: /api/competitors/{id}
+        // GET: /api/Competitor/{id}
         [HttpGet("{id}")]
         public IActionResult GetCompetitorById(int id)
         {
@@ -33,7 +33,7 @@ namespace Survivor.Controllers
             return Ok(competitor);
         }
 
-        // GET: /api/competitors/categories/{categoryId}
+        // GET: /api/Competitor/categories/{categoryId}
         [HttpGet("categories/{categoryId}")]
         public IActionResult GetCompetitorsByCategory(int categoryId)
         {
@@ -41,7 +41,7 @@ namespace Survivor.Controllers
             return Ok(competitors);
         }
 
-        // POST: /api/competitors
+        // POST: /api/Competitor
         [HttpPost]
         public IActionResult CreateCompetitor([FromBody] Competitor competitor)
         {
@@ -50,7 +50,7 @@ namespace Survivor.Controllers
             return CreatedAtAction(nameof(GetCompetitorById), new { id = competitor.Id }, competitor);
         }
 
-        // PUT: /api/competitors/{id}
+        // PUT: /api/Competitor/{id}
         [HttpPut("{id}")]
         public IActionResult UpdateCompetitor(int id, [FromBody] Competitor competitor)
         {
@@ -65,7 +65,7 @@ namespace Survivor.Controllers
             return NoContent();
         }
 
-        // DELETE: /api/competitors/{id}
+        // DELETE: /api/Competitor/{id}
         [HttpDelete("{id}")]
         public IActionResult DeleteCompetitor(int id)
         {
