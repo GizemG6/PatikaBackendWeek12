@@ -16,7 +16,7 @@ namespace CodeFirstBasic.Model.Context
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             // Connection string
-            optionsBuilder.UseSqlServer("Server=GIZEM\\SQLEXPRESS;initial Catalog=PatikaCodeFirstDb1;integrated Security=true;TrustServerCertificate=true;");
+            optionsBuilder.UseSqlServer("Server=localhost;initial Catalog=PatikaCodeFirstDb1;integrated Security=true;TrustServerCertificate=true;");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
