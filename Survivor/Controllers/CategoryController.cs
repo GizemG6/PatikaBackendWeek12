@@ -16,7 +16,7 @@ namespace Survivor.Controllers
             _context = context;
         }
 
-        // GET: /api/categories
+        // GET: /api/Category
         [HttpGet]
         public IActionResult GetAllCategories()
         {
@@ -24,7 +24,7 @@ namespace Survivor.Controllers
             return Ok(categories);
         }
 
-        // GET: /api/categories/{id}
+        // GET: /api/Category/{id}
         [HttpGet("{id}")]
         public IActionResult GetCategoryById(int id)
         {
@@ -33,7 +33,7 @@ namespace Survivor.Controllers
             return Ok(category);
         }
 
-        // POST: /api/categories
+        // POST: /api/Category
         [HttpPost]
         public IActionResult CreateCategory([FromBody] Category category)
         {
@@ -42,7 +42,7 @@ namespace Survivor.Controllers
             return CreatedAtAction(nameof(GetCategoryById), new { id = category.Id }, category);
         }
 
-        // PUT: /api/categories/{id}
+        // PUT: /api/Category/{id}
         [HttpPut("{id}")]
         public IActionResult UpdateCategory(int id, [FromBody] Category category)
         {
@@ -56,7 +56,7 @@ namespace Survivor.Controllers
             return NoContent();
         }
 
-        // DELETE: /api/categories/{id}
+        // DELETE: /api/Category/{id}
         [HttpDelete("{id}")]
         public IActionResult DeleteCategory(int id)
         {
