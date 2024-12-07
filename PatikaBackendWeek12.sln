@@ -5,6 +5,8 @@ VisualStudioVersion = 17.11.35222.181
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeFirstBasic", "CodeFirstBasic\CodeFirstBasic.csproj", "{F68B47D6-5E8A-4414-AFDF-C4536BE24AE3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeFirstRelation", "CodeFirstRelation\CodeFirstRelation.csproj", "{04B2F63E-E8D6-4A3F-8FF2-F2E7BFB9EDC3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{F68B47D6-5E8A-4414-AFDF-C4536BE24AE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F68B47D6-5E8A-4414-AFDF-C4536BE24AE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F68B47D6-5E8A-4414-AFDF-C4536BE24AE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04B2F63E-E8D6-4A3F-8FF2-F2E7BFB9EDC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04B2F63E-E8D6-4A3F-8FF2-F2E7BFB9EDC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04B2F63E-E8D6-4A3F-8FF2-F2E7BFB9EDC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04B2F63E-E8D6-4A3F-8FF2-F2E7BFB9EDC3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
