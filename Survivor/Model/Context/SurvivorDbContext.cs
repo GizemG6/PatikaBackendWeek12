@@ -13,7 +13,7 @@ namespace Survivor.Model.Context
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             // Configure the connection string
-            optionsBuilder.UseSqlServer("Server=localhost;initial Catalog=SurvivorDb;integrated Security=true;TrustServerCertificate=true;");
+            optionsBuilder.UseSqlServer("Server=GIZEM\\SQLEXPRESS;initial Catalog=SurvivorDb;integrated Security=true;TrustServerCertificate=true;");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
